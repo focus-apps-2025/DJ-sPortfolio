@@ -1,7 +1,7 @@
 import { Phone, Mail, MapPin, Download, MessageCircle } from "lucide-react";
 import djProfile from "@/assets/dj-profile.jpeg";
 import ffcLogo from "@/assets/ffc-logo.png";
-import focusEnggLogo from "@/assets/focus-engg-logo.jpg";
+import focusEnggLogo from "@/assets/focus-engg-logo.png";
 import focusOnSkillLogo from "@/assets/focus-on-skill-logo.png";
 import focusTechLogo from "@/assets/focus-technologies-logo.png";
 
