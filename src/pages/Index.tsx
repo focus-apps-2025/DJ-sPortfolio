@@ -68,10 +68,21 @@ const Index = () => {
             <Phone className="w-4 h-4 text-primary shrink-0 group-hover:scale-110 transition-transform" />
             <span className="text-foreground text-sm">+971 505286755</span>
           </a>
-          <a href="tel:+919686679955" className="flex items-center gap-3 gradient-card rounded-xl px-4 py-3 border border-border hover:border-primary/50 transition-all duration-300 group">
-            <Phone className="w-4 h-4 text-primary shrink-0 group-hover:scale-110 transition-transform" />
-            <span className="text-foreground text-sm">+91 9686679955</span>
-          </a>
+          <div className="flex items-center gap-2">
+            <a href="tel:+919686679955" className="flex-1 flex items-center gap-3 gradient-card rounded-xl px-4 py-3 border border-border hover:border-primary/50 transition-all duration-300 group">
+              <Phone className="w-4 h-4 text-primary shrink-0 group-hover:scale-110 transition-transform" />
+              <span className="text-foreground text-sm">+91 9686679955</span>
+            </a>
+            <a
+              href="https://wa.me/919686679955?text=Hi%20DJ%2C%20I%20would%20like%20to%20connect%20with%20you."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gradient-blue rounded-xl px-4 py-3 flex items-center gap-1.5 text-primary-foreground font-medium text-sm hover:opacity-90 transition-all duration-300 shadow-glow hover:scale-[1.02] animate-shimmer shrink-0"
+            >
+              <MessageCircle className="w-4 h-4" />
+              Contact Me
+            </a>
+          </div>
           <div className="flex items-center gap-2">
             <a href="mailto:dj@focusengineering.in" className="flex-1 flex items-center gap-3 gradient-card rounded-xl px-4 py-3 border border-border hover:border-primary/50 transition-all duration-300 group min-w-0">
               <Mail className="w-4 h-4 text-primary shrink-0 group-hover:scale-110 transition-transform" />
@@ -80,10 +91,10 @@ const Index = () => {
             <a
               href="/Focus-Engineering-Profile.pdf"
               download
-              className="gradient-blue rounded-xl px-3.5 py-3 flex items-center gap-1.5 text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity shadow-glow shrink-0"
+              className="gradient-blue rounded-xl px-4 py-3 flex items-center gap-1.5 text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity shadow-glow shrink-0"
             >
               <Download className="w-4 h-4" />
-              <span className="hidden sm:inline">Profile</span>
+              Profile
             </a>
           </div>
         </div>
@@ -98,19 +109,6 @@ const Index = () => {
             <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
             <span className="text-muted-foreground text-sm">149, Gandhiji Street, Thangam Nagar, Gudiyattam-632 602, Tamilnadu, India</span>
           </div>
-        </div>
-
-        {/* Contact Me WhatsApp Button */}
-        <div className="animate-fade-up-delay-5 mt-8 w-full">
-          <a
-            href="https://wa.me/919686679955?text=Hi%20DJ%2C%20I%20would%20like%20to%20connect%20with%20you."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full gradient-blue rounded-xl py-3.5 flex items-center justify-center gap-2 text-primary-foreground font-semibold text-base hover:opacity-90 transition-all duration-300 shadow-glow hover:scale-[1.02] animate-shimmer"
-          >
-            <MessageCircle className="w-5 h-5" />
-            Contact Me
-          </a>
         </div>
 
         <p className="mt-6 text-muted-foreground/40 text-xs">© {new Date().getFullYear()} M.Dhananjayan. All rights reserved.</p>
